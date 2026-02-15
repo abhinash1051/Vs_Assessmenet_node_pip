@@ -3,7 +3,7 @@
 ## Overview
 The Text Node in `/frontend/src/nodes/textNode.js` has been fully implemented with both required features:
 
-### Feature 1: Dynamic Width & Height ✅
+### Feature 1: Dynamic Width & Height 
 
 **Implementation:**
 - Uses `useRef` to measure textarea `scrollHeight`
@@ -31,7 +31,7 @@ useEffect(() => {
 
 ---
 
-### Feature 2: Variable Handle Creation ✅
+### Feature 2: Variable Handle Creation 
 
 **Implementation:**
 - Regex pattern: `/\{\{\s*([A-Za-z_$][A-Za-z0-9_$]*)\s*\}\}/g`
@@ -84,24 +84,23 @@ const leftHandles = useMemo(() => {
 
 ---
 
-## Features
-
-✅ **Auto-Resize**
+## Feature
+ **Auto-Resize**
 - Width expands with longest line (max 420px)
 - Height expands with number of lines (max 260px)
 - Minimum size: 240x140px
 
-✅ **Variable Detection**
+ **Variable Detection**
 - Detects `{{ varName }}` syntax with flexible spacing
 - Supports valid JavaScript identifiers: `_`, `$`, letters, numbers
 - Creates unique handles (duplicates are de-duplicated)
 
-✅ **Visual Indicators**
+ **Visual Indicators**
 - Variables displayed as styled pills below textarea
 - Each handle positioned proportionally on left edge
 - Monospace font for better readability
 
-✅ **Integration**
+ **Integration**
 - Works with drag-and-drop canvas
 - Handles connect to other nodes' outputs
 - Full ReactFlow compatibility
@@ -122,8 +121,8 @@ const leftHandles = useMemo(() => {
 ---
 
 ## Code Quality
-- ✅ No console errors
-- ✅ Proper React hooks (useEffect, useMemo, useRef, useState)
-- ✅ Efficient regex with Set for de-duplication
-- ✅ Responsive to content changes
-- ✅ Styled consistently with other nodes
+-  No console errors
+-  proper React hooks (useEffect, useMemo, useRef, useState)
+-  Efficient regex with Set for de-duplication
+-  Responsive to content changes
+-  Styled consistently with other nodes
